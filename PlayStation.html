@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(games.css);
+        .topnav {
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .topnav a {
+    background-color: #fff;
+  }
+  body{
+    height: 100%;
+  }
+  div.topnav{
+    position: relative;
+  }
+  .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0;
+    background-color: #0070d1;
+  }
+    
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header header header' 
+      'left middle middle middle middle middle middle right' 
+      'footer footer footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+    background-color: #0070d1;
+    margin-top: 2%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: fit-content;
+  }
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 2%;
+  }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+  h1{
+    color: #f1f1f1;
+    text-align: center;
+    font-size: larger;
+  }
+  h2{
+    color: #f1f1f1;
+    text-align: center;
+    font-size: large;
+  }
+  h3{
+    color: #f1f1f1;
+    text-align: center;
+    font-size: medium;
+  }
+  .p test{
+    -webkit-text-fill-color: #f8d200;
+  }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html"><img src="images\noun-home-5364940.png" height="50px"></a>
+        <a href="PC.html"><img src="images\noun-pc-1495810.png" height="50px"></a>
+        <a href="Xbox.html"><img src="images\xboxlogo.png" height="50px"></a>
+        <a href="PlayStation.html"><img src="images\PSlogo.png" height="50px"></a>
+        <a href="Nintendo.html"><img src="images\nintendoLogo.png" height="50px"></a>
+      </div>   
+    <div class="grid-container">
+        <div class="header">
+            <p class="test">New</p><!--Text not working changed plan-->
+            <a href="https://www.playstation.com/en-us/"><img src="images/PlaystationBlue.jpg"width="30%" align="center"></a>
+        </div>
+        </div>
+        <div class="middle"><h1>PS+</h1><h2>PS+ is playstations answer to Xbox Game pass giving a similar monlthy subsription to games.</h2><h3><p>PS+ does have a smaller variety of games and a much smaller selection on gamepass making PS+ much more hit or miss depending on your playstyle.</p></h3></div>
+        <div class="middle"><h1>Holiday Sales</h1><h2>Plastation has its fair share of sales on tech and games.<br>Controlers, consoles, and a large library of games have been known to go on sale.</h2><h3><p>Personally I have picked up a dualsense for $50 dollars($20 off) during their large black friday sales!</p></h3></div>
+        <div class="middle"><h1>Playstation Tech</h1><h2>Playstation has he best tech on the market, a great console, and the best controler on the market.</h2><h3><p>Though the console is held back by its small library of games the controler is able to be used on PC where i've personally sen great results with it and would recommend picking one up when it comes on sale.</p></h3></div> 
+    <div class="footer">
+      <p>Deal Website By Robert P4 WHS Design Class 2022-2023</p>
+      </div>
+</body>
+</html>

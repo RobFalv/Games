@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(games.css);
+        .topnav {
+    overflow: hidden;
+    background-color: #171a21;
+  }
+  .topnav a {
+    background-color: aliceblue;
+  }
+  body{
+    background-image: linear-gradient(to bottom, #274055,#151e2b);
+    height: 100%;
+  }
+  div.topnav{
+    position: relative;
+  }
+  .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0;
+    background-color: #000000;
+  }
+    
+  /* The grid container */
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'header header header header header header header header' 
+      'left middle middle middle middle middle middle right' 
+      'footer footer footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - if you want gap between the columns */
+  } 
+  
+  .left,
+  .middle,
+  .right {
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left;
+  }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle;
+    background-color: #07111a;
+    margin-top: 2%;
+    margin-right: 20%;
+    margin-left: 20%;
+    height: fit-content;
+  }
+  /* Style the right column */
+  .right {
+    grid-area: right;
+  }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 2%;
+  }
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas: 
+        'header header header header header header' 
+        'left left left left left left' 
+        'middle middle middle middle middle middle' 
+        'right right right right right right' 
+        'footer footer footer footer footer footer';
+    }
+  }
+  h1{
+    color: #f1f1f1;
+    text-align: center;
+    font-size: larger;
+  }
+  h2{
+    color: #f1f1f1;
+    text-align: center;
+    font-size: large;
+  }
+  h3{
+    color: #f1f1f1;
+    text-align: center;
+    font-size: medium;
+  }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html"><img src="images\noun-home-5364940.png" height="50px"></a>
+        <a href="PC.html"><img src="images\noun-pc-1495810.png" height="50px"></a>
+        <a href="Xbox.html"><img src="images\xboxlogo.png" height="50px"></a>
+        <a href="PlayStation.html"><img src="images\PSlogo.png" height="50px"></a>
+        <a href="Nintendo.html"><img src="images\nintendoLogo.png" height="50px"></a>
+      </div>   <!--Best i can do with the images in nav bar-->
+    <div class="grid-container">
+        <div class="header">
+          <a href="https://store.steampowered.com"><img src="images\SteamSale.jpg"width="50%"></a>
+        </div>
+        </div>
+          <div class="middle"><h1>The Steam Summer Sale</h1><h2>The Steam summer sale is Steam's annual sale period which provides<br> HUGE deals on almost everything!</h2><h3><p>This sale is the best time to buy any games you ever wanted getting so many new games for such a a small price</p></h3></div>
+      <div class="middle"><h1>The Epic Games Store</h1><h2>The Epic Games store provides monthly free games to draw users to their platforms make sure to keep coming back evy month to see what else they added!</h2><h3>These games ar't just small games, larger games like Ark Survival Evolved, Bioshock and many more have been proven to be released for free in this manor!</h3></p></h3></div>
+    </div> <!--Fixed the spacing </div> was the issue-->
+      <div class="middle"><h1>PC Game Pass</h1><h2>PC Game Pass is Xbox Game Pass but for PC. A monthly subscription to so many amazing games.</h2><h3><p>With Hundreds of amazing tripple A games on this subscription based service their is no comitment to buying a game in case you dont end up liking it!</p></h3><iframe width="560" height="315" src="https://www.youtube.com/embed/srLdxSfCB8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="footer">
+      <p>Deal Website By Robert P4 WHS Design Class 2022-2023</p>
+      </div>
+</body>
+</html>

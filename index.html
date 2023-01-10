@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(games.css);
+        body{
+        background-color: #0B132B;
+        color: #fff;
+        }
+        table, th, td {
+  border:1px solid rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+}
+.header{
+  background-color: #1C2541;
+}
+.topnav {
+  background-color: #3A506B;
+}
+.footer{
+  background-color: #3A506B;
+  margin-top: 5%;
+}
+    </style>
+</head>
+<div class="topnav">
+    <a href="index.html"><img src="images\noun-home-5364940.png" height="50px"></a>
+    <a href="PC.html"><img src="images\noun-pc-1495810.png" height="50px"></a>
+    <a href="Xbox.html"><img src="images\xboxlogo.png" height="50px"></a>
+    <a href="PlayStation.html"><img src="images\PSlogo.png" height="50px"></a>
+    <a href="Nintendo.html"><img src="images\nintendoLogo.png" height="50px"></a>
+  </div><!--can not get this to work with images navbar best works with text-->
+<div class="grid-container">
+  <div class="header">
+    <h2>Video Game Deals</h2>
+  </div>
+  
+  <!--
+  <div class="left"><a href=""></a><img src="images\nintendoswitch-1659466481397.jpg" height="300px"></div>
+  <div class="middle1"><a href=""></a><img src="images\PCorigonal.avif" height="300px"></div>  
+  <div class="middle2"><a href=""></a><img src="images\ps5imgorigonal.jpg" height="300px"></div> 
+  <div class="right"><a href=""></a><img src="images\SboxImageOrigonal.jpg" height="300px"></div>
+  Did not work how i wanted-->
+</div>
+  <table style="width:75%">
+    <tr>
+      <th style="height:100px"></th>
+      <th style="width:500px">Games</th>
+      <th style="width:500px">No Games</th><!--change to fit in with changing resolutions images are being wierd.-->
+    </tr>
+    <tr>
+      <th style="width:100px">Sales</th>
+      <td style="background-color: #07111a;"><a href="PC.html"><img src="images\SteamSale.jpg" width="35%"></a></td>
+      <td style="background-color: #107c10;"><a href="Xbox.html"><img src="images\gamepass.png" width="35%"></a></td>
+    </tr>
+    <tr>
+      <th>No Sales</th>
+      <td style="background-color: #e60012;"><a href="Nintendo.html"><img src="images\nintendo-logo-png-transparent.png" width="35%" align="center"></a></td>
+      <td style="background-color: #0070d1;"><a href="PlayStation.html"><img src="images\PlaystationBlue.jpg" width="35%"></a></td>
+    </tr><!--table seems to be the best way to do this-->
+  </table>
+
+  <div class="footer">
+  <p>Deal Website By Robert P4 WHS Design Class 2022-2023</p>
+  </div>
+</div>
+</body>
+</html>
